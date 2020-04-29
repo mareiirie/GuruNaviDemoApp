@@ -1,0 +1,47 @@
+{
+  "Mac" : [
+    {
+      "name" : "ObjcExceptionBridging",
+      "hash" : "3f6a36b2a149c8274a79f264c6ba35d9eaaaba5bb5d8a2a000d372c212adede5"
+    },
+    {
+      "name" : "XCGLogger",
+      "hash" : "64232536cde8bb87a2b8907b627e56fcb04e5cee14a9341dd9f51008455fed7d",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "ObjcExceptionBridging",
+      "hash" : "e8b9358e0dcacaeb67f9f850d5d3c39e007c4bc9195f0336baa26bbc0973d933"
+    },
+    {
+      "name" : "XCGLogger",
+      "hash" : "e16035e40361646283c0ba0e29333d9685e6e2b586c602b81672ccf9eccfa8fb",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "ObjcExceptionBridging",
+      "hash" : "82f66fd275c72ebb7076c38f076a0b1ace6dd9b7ebe487032744933f8cfecb50"
+    },
+    {
+      "name" : "XCGLogger",
+      "hash" : "6742b2552cd928666714599ac9c2160d5536e58e681a52c1eb59dd6731116f22",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ],
+  "commitish" : "7.0.1",
+  "iOS" : [
+    {
+      "name" : "ObjcExceptionBridging",
+      "hash" : "2dc1eb95f7c6bac19b8d604d7c719899a01b8ceee425314be5aa6b045a696f68"
+    },
+    {
+      "name" : "XCGLogger",
+      "hash" : "bea60ca4307fa3568c74cd2bf23561478a7c66b649c4bb4909e85332cd797e99",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

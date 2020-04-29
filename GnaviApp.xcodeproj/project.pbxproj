@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A47B0AC12442C84400E1B7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B0AC02442C84400E1B7E7 /* AppDelegate.swift */; };
+		A47B0AC32442C84400E1B7E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B0AC22442C84400E1B7E7 /* SceneDelegate.swift */; };
+		A47B0AC52442C84400E1B7E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B0AC42442C84400E1B7E7 /* HomeViewController.swift */; };
+		A47B0AC82442C84400E1B7E7 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47B0AC62442C84400E1B7E7 /* HomeViewController.storyboard */; };
+		A47B0ACA2442C84600E1B7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47B0AC92442C84600E1B7E7 /* Assets.xcassets */; };
+		A47B0ACD2442C84600E1B7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47B0ACB2442C84600E1B7E7 /* LaunchScreen.storyboard */; };
+		A47B0AD82442C84600E1B7E7 /* GnaviAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B0AD72442C84600E1B7E7 /* GnaviAppTests.swift */; };
+		A47B0AE32442C84600E1B7E7 /* GnaviAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B0AE22442C84600E1B7E7 /* GnaviAppUITests.swift */; };
+		A47B0AFA2442D45300E1B7E7 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B0AF92442D45300E1B7E7 /* SideMenuViewController.swift */; };
+		A48204BB2442DB2A0048DE8D /* GetClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204BA2442DB2A0048DE8D /* GetClassName.swift */; };
+		A48204BD2442DCDD0048DE8D /* UIStoryboard+Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204BC2442DCDD0048DE8D /* UIStoryboard+Instance.swift */; };
+		A48204BF2442E2670048DE8D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204BE2442E2670048DE8D /* APIClient.swift */; };
+		A48204C32442E40B0048DE8D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48204C22442E40B0048DE8D /* Alamofire.framework */; };
+		A48204C42442E40B0048DE8D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A48204C22442E40B0048DE8D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A48204C72442E4720048DE8D /* GetAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204C62442E4720048DE8D /* GetAPIService.swift */; };
+		A48204C92442E4A30048DE8D /* ReturnCodeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204C82442E4A30048DE8D /* ReturnCodeResult.swift */; };
+		A48204CB2442E4DF0048DE8D /* WebAPIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204CA2442E4DF0048DE8D /* WebAPIRequestProtocol.swift */; };
+		A48204CF2442E52A0048DE8D /* WebAPIReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204CE2442E52A0048DE8D /* WebAPIReturnCode.swift */; };
+		A48204D12442E5640048DE8D /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204D02442E5640048DE8D /* HomeAPI.swift */; };
+		A48204D32442E59B0048DE8D /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204D22442E59B0048DE8D /* HomeRequest.swift */; };
+		A48204D52442E5BF0048DE8D /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204D42442E5BF0048DE8D /* HomeResponse.swift */; };
+		A48204D724440E740048DE8D /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48204D624440E740048DE8D /* XCGLogger.framework */; };
+		A48204D824440E740048DE8D /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A48204D624440E740048DE8D /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A48204DA24440F7D0048DE8D /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48204D924440F7D0048DE8D /* ObjcExceptionBridging.framework */; };
+		A48204DB24440F7D0048DE8D /* ObjcExceptionBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A48204D924440F7D0048DE8D /* ObjcExceptionBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A48204DD24441E0E0048DE8D /* Json+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204DC24441E0E0048DE8D /* Json+Dictionary.swift */; };
+		A48204DF244421C40048DE8D /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204DE244421C40048DE8D /* String+Localize.swift */; };
+		A48204E12444222C0048DE8D /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48204E02444222C0048DE8D /* Date+Format.swift */; };
+		A48204E4244423370048DE8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A48204E3244423370048DE8D /* Localizable.strings */; };
+		A4C729582459808A00A2EB97 /* NSError+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C729572459808A00A2EB97 /* NSError+Helper.swift */; };
+		A4C7295D2459A36A00A2EB97 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7295B2459A36A00A2EB97 /* HomeCollectionViewCell.swift */; };
+		A4C7295E2459A36A00A2EB97 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C7295C2459A36A00A2EB97 /* HomeCollectionViewCell.xib */; };
+		A4C729622459B2FE00A2EB97 /* HomeListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C729612459B2FE00A2EB97 /* HomeListProvider.swift */; };
+		A4C729642459B5DD00A2EB97 /* UIImage+CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C729632459B5DD00A2EB97 /* UIImage+CacheImage.swift */; };
+		A4C729672459BC9400A2EB97 /* HomeEmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C729652459BC9400A2EB97 /* HomeEmptyCollectionViewCell.swift */; };
+		A4C729682459BC9400A2EB97 /* HomeEmptyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C729662459BC9400A2EB97 /* HomeEmptyCollectionViewCell.xib */; };
+		A4C7296A2459C17000A2EB97 /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C729692459C17000A2EB97 /* UIViewController+ActivityIndicator.swift */; };
+		A4C7296C2459C5E100A2EB97 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7296B2459C5E100A2EB97 /* UIViewController+Alert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A47B0AD42442C84600E1B7E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A47B0AB52442C84400E1B7E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47B0ABC2442C84400E1B7E7;
+			remoteInfo = GnaviApp;
+		};
+		A47B0ADF2442C84600E1B7E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A47B0AB52442C84400E1B7E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47B0ABC2442C84400E1B7E7;
+			remoteInfo = GnaviApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A48204C52442E40B0048DE8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A48204C42442E40B0048DE8D /* Alamofire.framework in Embed Frameworks */,
+				A48204D824440E740048DE8D /* XCGLogger.framework in Embed Frameworks */,
+				A48204DB24440F7D0048DE8D /* ObjcExceptionBridging.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A47B0ABD2442C84400E1B7E7 /* GnaviApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GnaviApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47B0AC02442C84400E1B7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A47B0AC22442C84400E1B7E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A47B0AC42442C84400E1B7E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A47B0AC72442C84400E1B7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
+		A47B0AC92442C84600E1B7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47B0ACC2442C84600E1B7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A47B0ACE2442C84600E1B7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47B0AD32442C84600E1B7E7 /* GnaviAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnaviAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47B0AD72442C84600E1B7E7 /* GnaviAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnaviAppTests.swift; sourceTree = "<group>"; };
+		A47B0AD92442C84600E1B7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47B0ADE2442C84600E1B7E7 /* GnaviAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnaviAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47B0AE22442C84600E1B7E7 /* GnaviAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnaviAppUITests.swift; sourceTree = "<group>"; };
+		A47B0AE42442C84600E1B7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47B0AF92442D45300E1B7E7 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		A48204BA2442DB2A0048DE8D /* GetClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClassName.swift; sourceTree = "<group>"; };
+		A48204BC2442DCDD0048DE8D /* UIStoryboard+Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instance.swift"; sourceTree = "<group>"; };
+		A48204BE2442E2670048DE8D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A48204C22442E40B0048DE8D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A48204C62442E4720048DE8D /* GetAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPIService.swift; sourceTree = "<group>"; };
+		A48204C82442E4A30048DE8D /* ReturnCodeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnCodeResult.swift; sourceTree = "<group>"; };
+		A48204CA2442E4DF0048DE8D /* WebAPIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIRequestProtocol.swift; sourceTree = "<group>"; };
+		A48204CE2442E52A0048DE8D /* WebAPIReturnCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIReturnCode.swift; sourceTree = "<group>"; };
+		A48204D02442E5640048DE8D /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		A48204D22442E59B0048DE8D /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
+		A48204D42442E5BF0048DE8D /* HomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
+		A48204D624440E740048DE8D /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		A48204D924440F7D0048DE8D /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
+		A48204DC24441E0E0048DE8D /* Json+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Json+Dictionary.swift"; sourceTree = "<group>"; };
+		A48204DE244421C40048DE8D /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		A48204E02444222C0048DE8D /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		A48204E3244423370048DE8D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A4C729572459808A00A2EB97 /* NSError+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Helper.swift"; sourceTree = "<group>"; };
+		A4C7295B2459A36A00A2EB97 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4C7295C2459A36A00A2EB97 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4C729612459B2FE00A2EB97 /* HomeListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListProvider.swift; sourceTree = "<group>"; };
+		A4C729632459B5DD00A2EB97 /* UIImage+CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CacheImage.swift"; sourceTree = "<group>"; };
+		A4C729652459BC9400A2EB97 /* HomeEmptyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4C729662459BC9400A2EB97 /* HomeEmptyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEmptyCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4C729692459C17000A2EB97 /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		A4C7296B2459C5E100A2EB97 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47B0ABA2442C84400E1B7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48204C32442E40B0048DE8D /* Alamofire.framework in Frameworks */,
+				A48204D724440E740048DE8D /* XCGLogger.framework in Frameworks */,
+				A48204DA24440F7D0048DE8D /* ObjcExceptionBridging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47B0AD02442C84600E1B7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47B0ADB2442C84600E1B7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A47B0AB42442C84400E1B7E7 = {
+			isa = PBXGroup;
+			children = (
+				A47B0ABF2442C84400E1B7E7 /* GnaviApp */,
+				A47B0AD62442C84600E1B7E7 /* GnaviAppTests */,
+				A47B0AE12442C84600E1B7E7 /* GnaviAppUITests */,
+				A47B0ABE2442C84400E1B7E7 /* Products */,
+				A48204C12442E40B0048DE8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A47B0ABE2442C84400E1B7E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47B0ABD2442C84400E1B7E7 /* GnaviApp.app */,
+				A47B0AD32442C84600E1B7E7 /* GnaviAppTests.xctest */,
+				A47B0ADE2442C84600E1B7E7 /* GnaviAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47B0ABF2442C84400E1B7E7 /* GnaviApp */ = {
+			isa = PBXGroup;
+			children = (
+				A47B0AC02442C84400E1B7E7 /* AppDelegate.swift */,
+				A47B0AC22442C84400E1B7E7 /* SceneDelegate.swift */,
+				A47B0AC42442C84400E1B7E7 /* HomeViewController.swift */,
+				A4C729612459B2FE00A2EB97 /* HomeListProvider.swift */,
+				A4C7295B2459A36A00A2EB97 /* HomeCollectionViewCell.swift */,
+				A4C7295C2459A36A00A2EB97 /* HomeCollectionViewCell.xib */,
+				A4C729652459BC9400A2EB97 /* HomeEmptyCollectionViewCell.swift */,
+				A4C729662459BC9400A2EB97 /* HomeEmptyCollectionViewCell.xib */,
+				A47B0AC62442C84400E1B7E7 /* HomeViewController.storyboard */,
+				A47B0AF92442D45300E1B7E7 /* SideMenuViewController.swift */,
+				A47B0AC92442C84600E1B7E7 /* Assets.xcassets */,
+				A47B0ACB2442C84600E1B7E7 /* LaunchScreen.storyboard */,
+				A47B0ACE2442C84600E1B7E7 /* Info.plist */,
+				A47B0AF22442C8F400E1B7E7 /* View */,
+				A47B0AF12442C8ED00E1B7E7 /* Controller */,
+				A47B0AF02442C8E400E1B7E7 /* Extension */,
+				A47B0AF32442C8FE00E1B7E7 /* Utility */,
+				A47B0AF62442C91000E1B7E7 /* Module */,
+			);
+			path = GnaviApp;
+			sourceTree = "<group>";
+		};
+		A47B0AD62442C84600E1B7E7 /* GnaviAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A47B0AD72442C84600E1B7E7 /* GnaviAppTests.swift */,
+				A47B0AD92442C84600E1B7E7 /* Info.plist */,
+			);
+			path = GnaviAppTests;
+			sourceTree = "<group>";
+		};
+		A47B0AE12442C84600E1B7E7 /* GnaviAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A47B0AE22442C84600E1B7E7 /* GnaviAppUITests.swift */,
+				A47B0AE42442C84600E1B7E7 /* Info.plist */,
+			);
+			path = GnaviAppUITests;
+			sourceTree = "<group>";
+		};
+		A47B0AF02442C8E400E1B7E7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A48204BC2442DCDD0048DE8D /* UIStoryboard+Instance.swift */,
+				A4C729692459C17000A2EB97 /* UIViewController+ActivityIndicator.swift */,
+				A48204DE244421C40048DE8D /* String+Localize.swift */,
+				A48204DC24441E0E0048DE8D /* Json+Dictionary.swift */,
+				A48204E02444222C0048DE8D /* Date+Format.swift */,
+				A4C729572459808A00A2EB97 /* NSError+Helper.swift */,
+				A4C729632459B5DD00A2EB97 /* UIImage+CacheImage.swift */,
+				A4C7296B2459C5E100A2EB97 /* UIViewController+Alert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A47B0AF12442C8ED00E1B7E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A47B0AF22442C8F400E1B7E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A47B0AF32442C8FE00E1B7E7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A47B0AF42442C8FE00E1B7E7 /* API */,
+				A47B0AF52442C8FE00E1B7E7 /* Helper */,
+				A48204BA2442DB2A0048DE8D /* GetClassName.swift */,
+				A48204E3244423370048DE8D /* Localizable.strings */,
+			);
+			name = Utility;
+			path = GnaviApp/Utility;
+			sourceTree = SOURCE_ROOT;
+		};
+		A47B0AF42442C8FE00E1B7E7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A48204BE2442E2670048DE8D /* APIClient.swift */,
+				A48204C62442E4720048DE8D /* GetAPIService.swift */,
+				A48204C82442E4A30048DE8D /* ReturnCodeResult.swift */,
+				A48204CA2442E4DF0048DE8D /* WebAPIRequestProtocol.swift */,
+				A48204CE2442E52A0048DE8D /* WebAPIReturnCode.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A47B0AF52442C8FE00E1B7E7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A47B0AF62442C91000E1B7E7 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A48204D02442E5640048DE8D /* HomeAPI.swift */,
+				A48204D22442E59B0048DE8D /* HomeRequest.swift */,
+				A48204D42442E5BF0048DE8D /* HomeResponse.swift */,
+			);
+			name = Module;
+			path = GnaviApp/Module;
+			sourceTree = SOURCE_ROOT;
+		};
+		A48204C12442E40B0048DE8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A48204D924440F7D0048DE8D /* ObjcExceptionBridging.framework */,
+				A48204D624440E740048DE8D /* XCGLogger.framework */,
+				A48204C22442E40B0048DE8D /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47B0ABC2442C84400E1B7E7 /* GnaviApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47B0AE72442C84600E1B7E7 /* Build configuration list for PBXNativeTarget "GnaviApp" */;
+			buildPhases = (
+				A47B0AB92442C84400E1B7E7 /* Sources */,
+				A47B0ABA2442C84400E1B7E7 /* Frameworks */,
+				A47B0ABB2442C84400E1B7E7 /* Resources */,
+				A48204C02442E3910048DE8D /* ShellScript */,
+				A48204C52442E40B0048DE8D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GnaviApp;
+			productName = GnaviApp;
+			productReference = A47B0ABD2442C84400E1B7E7 /* GnaviApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A47B0AD22442C84600E1B7E7 /* GnaviAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47B0AEA2442C84600E1B7E7 /* Build configuration list for PBXNativeTarget "GnaviAppTests" */;
+			buildPhases = (
+				A47B0ACF2442C84600E1B7E7 /* Sources */,
+				A47B0AD02442C84600E1B7E7 /* Frameworks */,
+				A47B0AD12442C84600E1B7E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47B0AD52442C84600E1B7E7 /* PBXTargetDependency */,
+			);
+			name = GnaviAppTests;
+			productName = GnaviAppTests;
+			productReference = A47B0AD32442C84600E1B7E7 /* GnaviAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A47B0ADD2442C84600E1B7E7 /* GnaviAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47B0AED2442C84600E1B7E7 /* Build configuration list for PBXNativeTarget "GnaviAppUITests" */;
+			buildPhases = (
+				A47B0ADA2442C84600E1B7E7 /* Sources */,
+				A47B0ADB2442C84600E1B7E7 /* Frameworks */,
+				A47B0ADC2442C84600E1B7E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47B0AE02442C84600E1B7E7 /* PBXTargetDependency */,
+			);
+			name = GnaviAppUITests;
+			productName = GnaviAppUITests;
+			productReference = A47B0ADE2442C84600E1B7E7 /* GnaviAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A47B0AB52442C84400E1B7E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "入江真礼";
+				TargetAttributes = {
+					A47B0ABC2442C84400E1B7E7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A47B0AD22442C84600E1B7E7 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A47B0ABC2442C84400E1B7E7;
+					};
+					A47B0ADD2442C84600E1B7E7 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A47B0ABC2442C84400E1B7E7;
+					};
+				};
+			};
+			buildConfigurationList = A47B0AB82442C84400E1B7E7 /* Build configuration list for PBXProject "GnaviApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A47B0AB42442C84400E1B7E7;
+			productRefGroup = A47B0ABE2442C84400E1B7E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47B0ABC2442C84400E1B7E7 /* GnaviApp */,
+				A47B0AD22442C84600E1B7E7 /* GnaviAppTests */,
+				A47B0ADD2442C84600E1B7E7 /* GnaviAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47B0ABB2442C84400E1B7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C7295E2459A36A00A2EB97 /* HomeCollectionViewCell.xib in Resources */,
+				A48204E4244423370048DE8D /* Localizable.strings in Resources */,
+				A47B0ACD2442C84600E1B7E7 /* LaunchScreen.storyboard in Resources */,
+				A47B0ACA2442C84600E1B7E7 /* Assets.xcassets in Resources */,
+				A47B0AC82442C84400E1B7E7 /* HomeViewController.storyboard in Resources */,
+				A4C729682459BC9400A2EB97 /* HomeEmptyCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47B0AD12442C84600E1B7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47B0ADC2442C84600E1B7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A48204C02442E3910048DE8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A47B0AB92442C84400E1B7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47B0AFA2442D45300E1B7E7 /* SideMenuViewController.swift in Sources */,
+				A48204C72442E4720048DE8D /* GetAPIService.swift in Sources */,
+				A48204DD24441E0E0048DE8D /* Json+Dictionary.swift in Sources */,
+				A4C729672459BC9400A2EB97 /* HomeEmptyCollectionViewCell.swift in Sources */,
+				A4C7295D2459A36A00A2EB97 /* HomeCollectionViewCell.swift in Sources */,
+				A4C729582459808A00A2EB97 /* NSError+Helper.swift in Sources */,
+				A4C729622459B2FE00A2EB97 /* HomeListProvider.swift in Sources */,
+				A48204C92442E4A30048DE8D /* ReturnCodeResult.swift in Sources */,
+				A48204BF2442E2670048DE8D /* APIClient.swift in Sources */,
+				A48204DF244421C40048DE8D /* String+Localize.swift in Sources */,
+				A47B0AC52442C84400E1B7E7 /* HomeViewController.swift in Sources */,
+				A48204D52442E5BF0048DE8D /* HomeResponse.swift in Sources */,
+				A47B0AC12442C84400E1B7E7 /* AppDelegate.swift in Sources */,
+				A48204BB2442DB2A0048DE8D /* GetClassName.swift in Sources */,
+				A4C729642459B5DD00A2EB97 /* UIImage+CacheImage.swift in Sources */,
+				A4C7296C2459C5E100A2EB97 /* UIViewController+Alert.swift in Sources */,
+				A48204D12442E5640048DE8D /* HomeAPI.swift in Sources */,
+				A48204E12444222C0048DE8D /* Date+Format.swift in Sources */,
+				A48204CB2442E4DF0048DE8D /* WebAPIRequestProtocol.swift in Sources */,
+				A4C7296A2459C17000A2EB97 /* UIViewController+ActivityIndicator.swift in Sources */,
+				A47B0AC32442C84400E1B7E7 /* SceneDelegate.swift in Sources */,
+				A48204BD2442DCDD0048DE8D /* UIStoryboard+Instance.swift in Sources */,
+				A48204CF2442E52A0048DE8D /* WebAPIReturnCode.swift in Sources */,
+				A48204D32442E59B0048DE8D /* HomeRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47B0ACF2442C84600E1B7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47B0AD82442C84600E1B7E7 /* GnaviAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47B0ADA2442C84600E1B7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47B0AE32442C84600E1B7E7 /* GnaviAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A47B0AD52442C84600E1B7E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A47B0ABC2442C84400E1B7E7 /* GnaviApp */;
+			targetProxy = A47B0AD42442C84600E1B7E7 /* PBXContainerItemProxy */;
+		};
+		A47B0AE02442C84600E1B7E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A47B0ABC2442C84400E1B7E7 /* GnaviApp */;
+			targetProxy = A47B0ADF2442C84600E1B7E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A47B0AC62442C84400E1B7E7 /* HomeViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47B0AC72442C84400E1B7E7 /* Base */,
+			);
+			name = HomeViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		A47B0ACB2442C84600E1B7E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47B0ACC2442C84600E1B7E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47B0AE52442C84600E1B7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A47B0AE62442C84600E1B7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A47B0AE82442C84600E1B7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4L5PDK9D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GnaviApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures..GnaviApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A47B0AE92442C84600E1B7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4L5PDK9D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GnaviApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures..GnaviApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A47B0AEB2442C84600E1B7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4L5PDK9D;
+				INFOPLIST_FILE = GnaviAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures..GnaviAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GnaviApp.app/GnaviApp";
+			};
+			name = Debug;
+		};
+		A47B0AEC2442C84600E1B7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4L5PDK9D;
+				INFOPLIST_FILE = GnaviAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures..GnaviAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GnaviApp.app/GnaviApp";
+			};
+			name = Release;
+		};
+		A47B0AEE2442C84600E1B7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4L5PDK9D;
+				INFOPLIST_FILE = GnaviAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures..GnaviAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GnaviApp;
+			};
+			name = Debug;
+		};
+		A47B0AEF2442C84600E1B7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4L5PDK9D;
+				INFOPLIST_FILE = GnaviAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures..GnaviAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GnaviApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A47B0AB82442C84400E1B7E7 /* Build configuration list for PBXProject "GnaviApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47B0AE52442C84600E1B7E7 /* Debug */,
+				A47B0AE62442C84600E1B7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47B0AE72442C84600E1B7E7 /* Build configuration list for PBXNativeTarget "GnaviApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47B0AE82442C84600E1B7E7 /* Debug */,
+				A47B0AE92442C84600E1B7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47B0AEA2442C84600E1B7E7 /* Build configuration list for PBXNativeTarget "GnaviAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47B0AEB2442C84600E1B7E7 /* Debug */,
+				A47B0AEC2442C84600E1B7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47B0AED2442C84600E1B7E7 /* Build configuration list for PBXNativeTarget "GnaviAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47B0AEE2442C84600E1B7E7 /* Debug */,
+				A47B0AEF2442C84600E1B7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A47B0AB52442C84400E1B7E7 /* Project object */;
+}
